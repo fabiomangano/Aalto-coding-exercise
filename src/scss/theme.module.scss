@@ -1,0 +1,49 @@
+// -----------------------------------
+//    Typography
+// -----------------------------------
+
+@font-face {
+  font-family: 'Karbon Regular';
+  src: url('../assets/fonts/karbon-regular-webfont.ttf') format('ttf'),
+       url('../assets/fonts/karbon-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Karbon Semibold';
+  src: url('../assets/fonts/karbon-semibold-webfont.ttf') format('ttf'),
+       url('../assets/fonts/karbon-semibold-webfont.woff') format('woff');
+}
+
+@mixin font-title-h3 {
+  font-family: 'Karbon Semibold';
+  font-size: rem(36);
+}
+
+@mixin font-title-h4 {
+  font-family: 'Karbon Semibold';
+  font-size: rem(20);
+}
+
+@mixin font-text-p {
+  font-family: 'Karbon Regular';
+  font-size: rem(18);
+}
+
+@mixin font-label {
+  font-family: 'Karbon Regular';
+  font-size: rem(20);
+}
+
+// -----------------------------------
+//    Color Palette
+// -----------------------------------
+
+$color-white: #fff;
+
+$color-purple: #644c79;
+
+$color-blue: #003479;
+
+$color-light-gray: #f4f4f4;
+
+$color-medium-gray: #c2c2c2;

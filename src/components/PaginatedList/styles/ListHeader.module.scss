@@ -1,0 +1,95 @@
+@import "../../../scss/index.module.scss";
+
+.first-col-container {
+  position: relative;
+  @include font-title-h4;
+  color: $color-blue;
+
+  .first-col {
+    position: absolute;
+    margin-left: 10px;
+    margin-bottom: 9px;
+    bottom: 6.5px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: rem(17);
+  }
+}
+
+.first-col-container::before {
+  display: block;
+  height: 1px;
+  background-color: $color-medium-gray;
+
+  content: " ";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 9px;
+}
+
+.second-col-container {
+  position: relative;
+  @include font-title-h4;
+  color: $color-blue;
+
+  .second-col {
+    position: absolute;
+    margin-bottom: 9px;
+    bottom: 6.5px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: rem(17);
+  }
+}
+
+.second-col-container::before {
+  display: block;
+  height: 1px;
+  background-color: $color-medium-gray;
+
+  content: " ";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 9px;
+}
+
+.third-col-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  @include font-title-h4;
+  color: $color-blue;
+
+  .third-col {
+    position: absolute;
+    margin-right: 20px;
+    margin-bottom: 9px;
+    bottom: 6.5px;
+
+    @media screen and (max-width: 400px) {
+      margin-right: 25px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: rem(17);
+    margin-right: 10px;
+  }
+}
+
+.third-col-container::before {
+  display: block;
+  height: 1px;
+  background-color: $color-medium-gray;
+
+  content: " ";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 9px;
+}

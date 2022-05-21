@@ -1,0 +1,46 @@
+@import '../../scss/index.module.scss';
+
+.filter-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+  height: 523px;
+  background-color: $color-light-gray;
+
+  & .title {
+    @include font-title-h3;
+    color: $color-blue;
+    margin: 0;
+    padding: 0;
+    margin-top: 22px;
+  }
+
+  & .search-input-container {
+    margin-top: 29px;
+  }
+
+  & .switch-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 275px;
+    margin-top: 60px;
+  }
+
+  & .multiselect-container {
+    margin-top: 51px;
+  }
+
+  & .button-filter {
+    background-color: transparent;
+    border: 0;
+    margin-top: 48px;
+    @include font-label ;
+    font-size: rem(20);
+    color: $color-blue;
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+  }
+}

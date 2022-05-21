@@ -1,0 +1,42 @@
+@import '../../../scss/index.module.scss';
+
+.first-col-container {
+  display: flex;
+  align-items: center;
+  background-color: $color-white;
+  border-bottom: 2px solid #1a90e4;
+
+  .first-col {
+    margin-left: 33px;
+
+    @media screen and (max-width: 450px){
+      margin-right: 10px;
+    }
+  }
+}
+
+.second-col-container {
+  display: flex;
+  align-items: center;
+  background-color: $color-white;
+  border-bottom: 2px solid #1a90e4;
+
+  @media screen and (max-width: 450px){
+    padding-right: 10px;
+    padding: 2px 10px 0 2px;
+  }
+}
+
+.third-col-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-white;
+  border-bottom: 2px solid #1a90e4;
+
+  .third-col {
+    margin-right: 28px;
+  }
+}
+
+

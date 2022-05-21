@@ -1,0 +1,35 @@
+@import "../../scss/index.module.scss";
+
+.ms-SearchBox-root {
+  width: 275px;
+  height: 50px;
+  border: 1px solid $color-blue;
+  padding: 0;
+  color: $color-purple;
+
+  & :global .ms-SearchBox-iconContainer {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: $color-purple;
+    margin-right: 12px;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color-purple;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color-purple;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color-purple;
+  }
+}

@@ -1,0 +1,12 @@
+.ms-Panel {
+  & :global .ms-Panel-main {
+    & :global .ms-Panel-contentInner {
+      & :global .ms-Panel-scrollableContent {
+        & :global .ms-Panel-content {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
